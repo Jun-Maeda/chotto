@@ -15,8 +15,8 @@ class InfoAdmin(admin.ModelAdmin):
     inlines = [InfoImageInline]
     list_display = (
         'id',
-        'user',
         'title',
+        'user',
         'make_date',
         'update_date',
     )

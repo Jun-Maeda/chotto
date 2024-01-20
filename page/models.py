@@ -30,7 +30,7 @@ class Info(models.Model):
         verbose_name='更新日'
     )
 
-
+# お知らせ画像
 class InfoImage(models.Model):
     img = models.ImageField(
         verbose_name='画像',
