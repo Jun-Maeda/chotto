@@ -14,7 +14,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 class InfoListAPIView(APIView):
     def get(self, request):
         try:
-            all_info = Info.objects.all()
+            all_info = Info.objects.filter(event_flg=False)
             info_json = [{
                 'id': info.id,
                 'user': info.user_id,
@@ -26,3 +26,47 @@ class InfoListAPIView(APIView):
             return Response(info_json, status=200)
         except:
             return Response("error", status=404)
+
+
+class InfoDetailAPIView(APIView):
+    def get(self, request, pk):
+        try:
+            target_info = Info.objects.get(id=pk)
+            target_imgs = InfoImage.objects.filter(info=target_info)
+
+            info_json = {
+                'id': target_info.id,
+                'user': {'id': target_info.user_id,
+                         'name': target_info.user.username},
+                'title': target_info.title,
+                'detail': target_info.detail,
+                'images': [{'id': img.id,
+                            'img': img.img.path
+                            } for img in target_imgs],
+                'make_date': target_info.make_date,
+                'update_date': target_info.update_date
+            }
+
+            return Response(info_json, status=200)
+        except:
+            return Response("error", status=404)
+
+
+class EventListAPIView(APIView):
+    def get(self, request):
+        try:
+            all_event = Info.objects.filter(event_flg=True)
+            # イベントリストは最初の画像のみ取得して表示
+            event_json = [{
+                'id': event.id,
+                'user': event.user_id,
+                'title': event.title,
+                'image': InfoImage.objects.filter(info=event)[0].img.path,
+                'make_date': event.make_date,
+                'update_date': event.update_date
+            } for event in all_event]
+
+            return Response(event_json, status=200)
+        except:
+            return Response("error", status=404)
+

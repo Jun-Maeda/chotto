@@ -6,7 +6,8 @@ from django.conf import settings
 from . import api_views
 
 urlpatterns = [
-	path('info/', api_views.InfoListAPIView.as_view()),
-	# path('success/<uuid:pk>', views.SuccessView.as_view(), name='success'),
-	# path('CleanUp/<uuid:pk>', views.cleanup, name='cleanup'),
+    path('info/', api_views.InfoListAPIView.as_view()),
+    path('event/', api_views.EventListAPIView.as_view()),
+    path('info/<str:pk>', api_views.InfoDetailAPIView.as_view()),
+    # path('CleanUp/<uuid:pk>', views.cleanup, name='cleanup'),
 ]
