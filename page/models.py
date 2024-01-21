@@ -109,7 +109,7 @@ class Service(models.Model):
         verbose_name='サービス名',
         on_delete=models.CASCADE,
     )
-    servie_date = models.ForeignKey(
+    service_date = models.ForeignKey(
         ServiceDate,
         verbose_name='サービス利用日',
         on_delete=models.CASCADE,
@@ -124,11 +124,12 @@ class Service(models.Model):
     )
 
     def __str__(self):
-        return "["+self.name.name + "]" + self.servie_date.name + " " + self.service_time.name
+        return "["+self.name.name + "]" + self.service_date.name + " " + self.service_time.name
 
 
-# Todo:部屋のタイプで料金が変わるのか確認
 class RoomType(models.Model):
+    class Meta:
+        verbose_name_plural = "1.部屋タイプ"
     name = models.CharField(
         max_length=50,
         verbose_name='部屋タイプ'
@@ -182,6 +183,8 @@ class Room(models.Model):
         verbose_name='タイプ',
         on_delete=models.CASCADE,
     )
+    def __str__(self):
+        return self.name
 
 # メニュー関連
 class MenuType(models.Model):

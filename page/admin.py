@@ -86,11 +86,20 @@ class ServicePriceAdmin(admin.ModelAdmin):
         'service',
     )
 
+class RoomInline(admin.StackedInline):
+    model = Room
+    extra = 1
+
+class RoomTypeAdmin(admin.ModelAdmin):
+    inlines = [RoomInline]
+
+
 
 admin.site.register(Info, InfoAdmin)
 admin.site.register(ServicePrice, ServicePriceAdmin)
 admin.site.register(Menu, MenuAdmin)
-admin.site.register(RoomType)
+admin.site.register(RoomType, RoomTypeAdmin)
+admin.site.register(Room)
 admin.site.register(Service)
 admin.site.register(ServiceDate)
 admin.site.register(ServiceTime)
