@@ -157,13 +157,31 @@ def get_service_prices(service_name, price_filter):
         return []
 
 
+def get_service_details(service_name, service_all):
+    try:
+        service_filter = service_all.filter(name=service_name).order_by('priority')
+        filter_json = [{
+            'id': service.id,
+            'serice_date': service.service_date.name,
+            'service_time': service.service_time.name,
+            'priority': service.priority
+        }
+            for service in service_filter
+        ]
+        return filter_json
+    except:
+        return []
+
+
 def get_price(type, price_all):
     try:
         price_filter = price_all.filter(room_type=type)
         all_service_name = ServiceName.objects.all().order_by("priority")
+        service_all = Service.objects.all()
         filter_json = [{
             'id': service_name.id,
             'name': service_name.name,
+            'detail': get_service_details(service_name, service_all),
             'prices': get_service_prices(service_name, price_filter)
         }
             for service_name in all_service_name
