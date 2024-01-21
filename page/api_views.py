@@ -9,6 +9,7 @@ from rest_framework import filters
 import json
 import requests
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Q
 
 
 class InfoListAPIView(APIView):
@@ -69,4 +70,37 @@ class EventListAPIView(APIView):
             return Response(event_json, status=200)
         except:
             return Response("error", status=404)
+
+class ServiceListAPIView(APIView):
+    def get(self, request):
+        try:
+            all_service = Service.objects.all()
+            # イベントリストは最初の画像のみ取得して表示
+            service_json = [{
+                'id': service.id,
+                'name': service.name.name,
+                'service_date': service.servie_date.name,
+                'service_time': service.service_time.name,
+                'priority': service.priority
+            } for service in all_service]
+
+            return Response(service_json, status=200)
+        except:
+            return Response("error", status=404)
+
+class ServiceNameListAPIView(APIView):
+    def get(self, request):
+        try:
+            all_service = ServiceName.objects.all().order_by("priority")
+            # イベントリストは最初の画像のみ取得して表示
+            service_json = [{
+                'id': service.id,
+                'name': service.name,
+                'priority': service.priority
+            } for service in all_service]
+
+            return Response(service_json, status=200)
+        except:
+            return Response("error", status=404)
+
 

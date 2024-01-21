@@ -9,7 +9,8 @@ from django.utils import timezone
 # お知らせ
 class Info(models.Model):
     class Meta:
-        verbose_name_plural = "お知らせ&イベント"
+        verbose_name_plural = "1.お知らせ&イベント"
+
     user = models.ForeignKey(
         User,
         verbose_name='作成ユーザー名',
@@ -44,11 +45,12 @@ class InfoImage(models.Model):
     )
     info = models.ForeignKey(
         Info,
-        verbose_name='画像',
-        related_name='image',
+        verbose_name='お知らせ',
+        related_name='info_image',
         on_delete=models.CASCADE,
-        blank=True, null=True,
     )
+    def __str__(self):
+        return self.img.name
 
 
 # サービス関連
@@ -56,6 +58,9 @@ class ServiceDate(models.Model):
     name = models.CharField(
         max_length=50,
         verbose_name='利用日'
+    )
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
     )
 
     def __str__(self):
@@ -69,7 +74,7 @@ class ServiceTime(models.Model):
     )
     all_flg = models.BooleanField(
         default=False,
-        verbose_name='全日フラグ'
+        verbose_name='終日フラグ'
     )
     start_time = models.TimeField(
         verbose_name='開始時間',
@@ -79,43 +84,32 @@ class ServiceTime(models.Model):
         verbose_name='終了時間',
         blank=True, null=True,
     )
+
+
     def __str__(self):
         return self.name
 
-
-class Service(models.Model):
+class ServiceName(models.Model):
     name = models.CharField(
         max_length=50,
         verbose_name='サービス名'
     )
-    def __str__(self):
-        return self.name
-
-
-# Todo:部屋のタイプで料金が変わるのか確認
-class RoomType(models.Model):
-    name = models.CharField(
-        max_length=50,
-        verbose_name='部屋タイプ'
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
     )
     def __str__(self):
         return self.name
 
-
-class ServicePrice(models.Model):
+# サービスの利用日と時間
+class Service(models.Model):
     class Meta:
-        verbose_name_plural = "サービス料金設定"
-    room_type = models.ForeignKey(
-        RoomType,
-        verbose_name='部屋タイプ',
-        on_delete=models.CASCADE,
-    )
-    service = models.ForeignKey(
-        Service,
+        verbose_name_plural = "1.サービス内容"
+    name = models.ForeignKey(
+        ServiceName,
         verbose_name='サービス名',
         on_delete=models.CASCADE,
     )
-    service_date = models.ForeignKey(
+    servie_date = models.ForeignKey(
         ServiceDate,
         verbose_name='サービス利用日',
         on_delete=models.CASCADE,
@@ -125,8 +119,49 @@ class ServicePrice(models.Model):
         verbose_name='サービス利用時間',
         on_delete=models.CASCADE,
     )
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
+    )
+
+    def __str__(self):
+        return "["+self.name.name + "]" + self.servie_date.name + " " + self.service_time.name
+
+
+# Todo:部屋のタイプで料金が変わるのか確認
+class RoomType(models.Model):
+    name = models.CharField(
+        max_length=50,
+        verbose_name='部屋タイプ'
+    )
+
+    def __str__(self):
+        return self.name
+
+
+class ServicePrice(models.Model):
+    class Meta:
+        verbose_name_plural = "1.サービス料金設定"
+
+    room_type = models.ForeignKey(
+        RoomType,
+        verbose_name='部屋タイプ',
+        on_delete=models.CASCADE,
+    )
+    service = models.ForeignKey(
+        ServiceName,
+        verbose_name='サービス名',
+        on_delete=models.CASCADE,
+    )
+    service_date = models.ForeignKey(
+        ServiceDate,
+        verbose_name='サービス利用日',
+        on_delete=models.CASCADE,
+    )
     price = models.IntegerField(
         verbose_name='価格'
+    )
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
     )
 
 
@@ -148,12 +183,14 @@ class Room(models.Model):
         on_delete=models.CASCADE,
     )
 
-
+# メニュー関連
 class MenuType(models.Model):
     name = models.CharField(
         max_length=50,
         verbose_name='メニュージャンル'
     )
+    def __str__(self):
+        return self.name
 
 
 class Menu(models.Model):
@@ -169,3 +206,20 @@ class Menu(models.Model):
     price = models.IntegerField(
         verbose_name='価格'
     )
+    class Meta:
+        verbose_name_plural = "1.メニュー"
+
+
+class MenuImage(models.Model):
+    img = models.ImageField(
+        verbose_name='画像',
+        blank=True, null=True,
+    )
+    menu = models.ForeignKey(
+        Menu,
+        verbose_name='メニュー',
+        related_name='menu_image',
+        on_delete=models.CASCADE,
+    )
+    def __str__(self):
+        return self.img.name
