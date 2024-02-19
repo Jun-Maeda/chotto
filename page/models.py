@@ -49,6 +49,7 @@ class InfoImage(models.Model):
         related_name='info_image',
         on_delete=models.CASCADE,
     )
+
     def __str__(self):
         return self.img.name
 
@@ -85,9 +86,9 @@ class ServiceTime(models.Model):
         blank=True, null=True,
     )
 
-
     def __str__(self):
         return self.name
+
 
 class ServiceName(models.Model):
     name = models.CharField(
@@ -97,13 +98,16 @@ class ServiceName(models.Model):
     priority = models.FloatField(
         verbose_name='表示優先順位'
     )
+
     def __str__(self):
         return self.name
+
 
 # サービスの利用日と時間
 class Service(models.Model):
     class Meta:
-        verbose_name_plural = "1.サービス内容"
+        verbose_name_plural = "3.サービス内容"
+
     name = models.ForeignKey(
         ServiceName,
         verbose_name='サービス名',
@@ -124,12 +128,13 @@ class Service(models.Model):
     )
 
     def __str__(self):
-        return "["+self.name.name + "]" + self.service_date.name + " " + self.service_time.name
+        return "[" + self.name.name + "]" + self.service_date.name + " " + self.service_time.name
 
 
 class RoomType(models.Model):
     class Meta:
-        verbose_name_plural = "1.部屋タイプ"
+        verbose_name_plural = "3.部屋タイプ"
+
     name = models.CharField(
         max_length=50,
         verbose_name='部屋タイプ'
@@ -141,7 +146,7 @@ class RoomType(models.Model):
 
 class ServicePrice(models.Model):
     class Meta:
-        verbose_name_plural = "1.サービス料金設定"
+        verbose_name_plural = "3.サービス料金設定"
 
     room_type = models.ForeignKey(
         RoomType,
@@ -167,13 +172,30 @@ class ServicePrice(models.Model):
 
 
 class Facility(models.Model):
+    class Meta:
+        verbose_name_plural = "2.設備"
+
     name = models.CharField(
         max_length=50,
         verbose_name='設備'
     )
 
 
+# 部屋画像
+class RoomImage(models.Model):
+    img = models.ImageField(
+        verbose_name='画像',
+        blank=True, null=True,
+    )
+
+    def __str__(self):
+        return self.img.name
+
+
 class Room(models.Model):
+    class Meta:
+        verbose_name_plural = "2.部屋"
+
     name = models.CharField(
         max_length=50,
         verbose_name='部屋名',
@@ -183,8 +205,22 @@ class Room(models.Model):
         verbose_name='タイプ',
         on_delete=models.CASCADE,
     )
+    facility = models.ManyToManyField(
+        Facility,
+        verbose_name='設備',
+        related_name='room_facility',
+        blank=True, null=True,
+    )
+    img = models.ManyToManyField(
+        RoomImage,
+        verbose_name='部屋画像',
+        related_name='img_room',
+        blank=True, null=True,
+    )
+
     def __str__(self):
         return self.name
+
 
 # メニュー関連
 class MenuType(models.Model):
@@ -192,25 +228,60 @@ class MenuType(models.Model):
         max_length=50,
         verbose_name='メニュージャンル'
     )
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
+    )
+
     def __str__(self):
         return self.name
 
 
-class Menu(models.Model):
+class MenuCategory(models.Model):
+    class Meta:
+        verbose_name_plural = "2.メニューカテゴリー"
     name = models.CharField(
         max_length=50,
-        verbose_name='メニュー名',
+        verbose_name='メニューカテゴリー'
     )
     type = models.ForeignKey(
         MenuType,
         verbose_name='ジャンル',
         on_delete=models.CASCADE,
     )
-    price = models.IntegerField(
-        verbose_name='価格'
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
     )
+
+    def __str__(self):
+        return self.name
+
+
+class Menu(models.Model):
     class Meta:
         verbose_name_plural = "1.メニュー"
+
+    name = models.CharField(
+        max_length=50,
+        verbose_name='メニュー名',
+    )
+    category = models.ForeignKey(
+        MenuCategory,
+        verbose_name='カテゴリー',
+        on_delete=models.CASCADE,
+    )
+    price = models.IntegerField(
+        verbose_name='通常価格'
+    )
+    member_price = models.IntegerField(
+        verbose_name='メンバー価格'
+    )
+    priority = models.FloatField(
+        verbose_name='表示優先順位'
+    )
+    welcome_flg = models.BooleanField(
+        default=False,
+        verbose_name='ウェルカムフラグ'
+    )
 
 
 class MenuImage(models.Model):
@@ -224,5 +295,6 @@ class MenuImage(models.Model):
         related_name='menu_image',
         on_delete=models.CASCADE,
     )
+
     def __str__(self):
         return self.img.name

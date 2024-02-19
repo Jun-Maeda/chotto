@@ -49,18 +49,23 @@ class MenuAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'name',
-        'type',
+        'category',
+        'welcome_flg',
     )
     list_display_links = (
         'name',
+        'category',
+        'welcome_flg',
     )
     list_filter = (
         'name',
-        'type',
+        'category',
+        'welcome_flg',
     )
     search_fields = (
         'name',
-        'type',
+        'category',
+        'welcome_flg',
     )
 
 
@@ -86,6 +91,28 @@ class ServicePriceAdmin(admin.ModelAdmin):
         'service',
     )
 
+class RoomAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'type',
+
+
+    )
+    list_display_links = (
+        'name',
+        'type',
+    )
+    list_filter = (
+        'name',
+        'type',
+        'facility'
+    )
+    search_fields = (
+        'name',
+        'type',
+        'facility'
+    )
+
 class RoomInline(admin.StackedInline):
     model = Room
     extra = 1
@@ -99,9 +126,12 @@ admin.site.register(Info, InfoAdmin)
 admin.site.register(ServicePrice, ServicePriceAdmin)
 admin.site.register(Menu, MenuAdmin)
 admin.site.register(RoomType, RoomTypeAdmin)
-admin.site.register(Room)
+admin.site.register(Facility)
+admin.site.register(Room, RoomAdmin)
+admin.site.register(RoomImage)
 admin.site.register(Service)
 admin.site.register(ServiceDate)
 admin.site.register(ServiceTime)
 admin.site.register(ServiceName)
 admin.site.register(MenuType)
+admin.site.register(MenuCategory)

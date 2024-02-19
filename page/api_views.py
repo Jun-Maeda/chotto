@@ -12,10 +12,15 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
 
 
+def target_img(target_info):
+    target_imgs = InfoImage.objects.filter(info=target_info)
+    return target_imgs
+
+
 class InfoListAPIView(APIView):
     def get(self, request):
         try:
-            all_info = Info.objects.filter(event_flg=False)
+            all_info = Info.objects.filter(event_flg=False).order_by('-update_date')
             info_json = [{
                 'id': info.id,
                 'user': info.user_id,
@@ -33,7 +38,6 @@ class InfoDetailAPIView(APIView):
     def get(self, request, pk):
         try:
             target_info = Info.objects.get(id=pk)
-            target_imgs = InfoImage.objects.filter(info=target_info)
 
             info_json = {
                 'id': target_info.id,
@@ -43,7 +47,7 @@ class InfoDetailAPIView(APIView):
                 'detail': target_info.detail,
                 'images': [{'id': img.id,
                             'img': img.img.path
-                            } for img in target_imgs],
+                            } for img in target_img(target_info)],
                 'make_date': target_info.make_date,
                 'update_date': target_info.update_date
             }
@@ -56,15 +60,17 @@ class InfoDetailAPIView(APIView):
 class EventListAPIView(APIView):
     def get(self, request):
         try:
-            all_event = Info.objects.filter(event_flg=True)
+            all_event = Info.objects.filter(event_flg=True).order_by('-update_date')
             # イベントリストは最初の画像のみ取得して表示
             event_json = [{
                 'id': event.id,
                 'user': event.user_id,
                 'title': event.title,
-                'image': InfoImage.objects.filter(info=event)[0].img.path,
                 'make_date': event.make_date,
-                'update_date': event.update_date
+                'update_date': event.update_date,
+                'images': {'id': target_img(event)[0].id,
+                           'img': target_img(event)[0].img.path
+                           },
             } for event in all_event]
 
             return Response(event_json, status=200)
@@ -206,6 +212,41 @@ class RoomTypeDetailAPIView(APIView):
             }
 
             return Response(type_json, status=200)
+        except:
+            return Response("error", status=404)
+
+
+class HomeListAPIView(APIView):
+    def get(self, request):
+        try:
+            all_info = Info.objects.filter(event_flg=False).order_by('-update_date')[0:3]
+            info_json = [{
+                'id': info.id,
+                'user': info.user_id,
+                'title': info.title,
+                'make_date': info.make_date,
+                'update_date': info.update_date
+            } for info in all_info]
+
+            all_event = Info.objects.filter(event_flg=True).order_by('-update_date')[0:3]
+            # イベントリストは最初の画像のみ取得して表示
+            event_json = [{
+                'id': event.id,
+                'user': event.user_id,
+                'title': event.title,
+                'make_date': event.make_date,
+                'update_date': event.update_date,
+                'images': {'id': target_img(event)[0].id,
+                           'img': target_img(event)[0].img.path
+                           },
+            } for event in all_event]
+
+            result = {
+                'infos': info_json,
+                'events': event_json
+            }
+
+            return Response(result, status=200)
         except:
             return Response("error", status=404)
 
