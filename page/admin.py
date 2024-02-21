@@ -120,13 +120,29 @@ class RoomInline(admin.StackedInline):
 class RoomTypeAdmin(admin.ModelAdmin):
     inlines = [RoomInline]
 
+class FacilityAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'img',
+        'limited_flg',
+        'vip_flg'
+    )
+    list_display_links = (
+        'name',
+    )
+    list_filter = (
+        'name',
+    )
+    search_fields = (
+        'name',
+    )
 
 
 admin.site.register(Info, InfoAdmin)
 admin.site.register(ServicePrice, ServicePriceAdmin)
 admin.site.register(Menu, MenuAdmin)
 admin.site.register(RoomType, RoomTypeAdmin)
-admin.site.register(Facility)
+admin.site.register(Facility, FacilityAdmin)
 admin.site.register(Room, RoomAdmin)
 admin.site.register(RoomImage)
 admin.site.register(Service)

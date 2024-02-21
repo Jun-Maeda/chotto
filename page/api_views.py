@@ -250,6 +250,88 @@ class HomeListAPIView(APIView):
         except:
             return Response("error", status=404)
 
+
+# 設備情報から設備に対応する部屋一覧を取得する
+def facility_rooms(facility_object, room_all):
+    filter_rooms = room_all.filter(facility=facility_object)
+    result = [{
+        'id': room.id,
+        'name': room.name
+    } for room in filter_rooms]
+    return result
+
+
+# 設備ページ
+class FacilityListAPIView(APIView):
+    def get(self, request):
+        try:
+            facility_all = Facility.objects.all()
+            room_all = Room.objects.all()
+
+            # 通常設備
+            normal_facility_all = facility_all.filter(vip_flg=False, limited_flg=False)
+            normal_lists = [{
+                'id': normal.id,
+                'name': normal.name,
+            } for normal in normal_facility_all]
+            normal_imgs = []
+            for normal in normal_facility_all:
+                if normal.img.name is not "":
+                    normal_imgs.append(normal.img.path)
+
+            normal_result = {
+                'facilities': normal_lists,
+                'imgs': normal_imgs
+            }
+
+            # VIP設備
+            vip_facility_all = facility_all.filter(vip_flg=True)
+            vip_lists = [{
+                'id': vip.id,
+                'name': vip.name,
+            } for vip in vip_facility_all]
+            vip_imgs = []
+            for vip in vip_facility_all:
+                if vip.img.name is not "":
+                    vip_imgs.append(vip.img.path)
+
+            vip_rooms = Room.objects.filter(type__name='VIP')
+            vip_room_lists = [{
+                'id': v.id,
+                'name': v.name
+            } for v in vip_rooms]
+
+            vip_result = {
+                'facilities': vip_lists,
+                'imgs': vip_imgs,
+                'rooms': vip_room_lists
+            }
+
+            # 限定設備
+            limited_facility_all = facility_all.filter(limited_flg=True)
+            limited_result = []
+            for limited in limited_facility_all:
+                img_path = ''
+                if limited.img.name is not "":
+                    img_path = limited.img.path
+                limited = {
+                    'id': limited.id,
+                    'name': limited.name,
+                    'img': img_path,
+                    'rooms': facility_rooms(limited, room_all)
+                }
+                limited_result.append(limited)
+
+            facility_result = {
+                'normal': normal_result,
+                'vip': vip_result,
+                'limited_facilities': limited_result
+            }
+
+            return Response(facility_result, status=200)
+        except Exception as e:
+            return Response(e, status=404)
+
 # class ServiceNameListAPIView(APIView):
 #     def get(self, request):
 #         try:

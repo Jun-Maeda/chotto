@@ -13,6 +13,7 @@ urlpatterns = [
     path('room_type/', api_views.RoomTypeListAPIView.as_view()),
     path('room_type/<str:pk>', api_views.RoomTypeDetailAPIView.as_view()),
     path('home/', api_views.HomeListAPIView.as_view()),
+    path('facility/', api_views.FacilityListAPIView.as_view()),
     # path('service_name/', api_views.ServiceNameListAPIView.as_view()),
     # path('CleanUp/<uuid:pk>', views.cleanup, name='cleanup'),
 ]

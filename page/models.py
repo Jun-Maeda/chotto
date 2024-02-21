@@ -171,6 +171,7 @@ class ServicePrice(models.Model):
     )
 
 
+# 設備
 class Facility(models.Model):
     class Meta:
         verbose_name_plural = "2.設備"
@@ -178,6 +179,18 @@ class Facility(models.Model):
     name = models.CharField(
         max_length=50,
         verbose_name='設備'
+    )
+    img = models.ImageField(
+        verbose_name='画像',
+        blank=True, null=True,
+    )
+    vip_flg = models.BooleanField(
+        verbose_name='VIP限定フラグ',
+        default=False,
+    )
+    limited_flg = models.BooleanField(
+        default=False,
+        verbose_name='限定フラグ',
     )
 
 
@@ -239,6 +252,7 @@ class MenuType(models.Model):
 class MenuCategory(models.Model):
     class Meta:
         verbose_name_plural = "2.メニューカテゴリー"
+
     name = models.CharField(
         max_length=50,
         verbose_name='メニューカテゴリー'
