@@ -332,6 +332,7 @@ class FacilityListAPIView(APIView):
         except Exception as e:
             return Response(e, status=404)
 
+
 # class ServiceNameListAPIView(APIView):
 #     def get(self, request):
 #         try:
@@ -346,3 +347,14 @@ class FacilityListAPIView(APIView):
 #             return Response(service_json, status=200)
 #         except:
 #             return Response("error", status=404)
+
+
+class RoomDetailView(APIView):
+    def get(selfself, request, pk):
+        room = Room.objects.get(id=pk)
+        images = [r for r in room.imgs.all()]
+        facility_all = room.facility.all()
+        limited_facilities = facility_all.filter(limited_flg=True)
+        limited_result = [{'id': limited.id, 'name': limited.name} for limited in limited_facilities]
+        vip_facility = facility_all.filter(vip_flg=True)
+        vip_result = [{'id': vip.id, 'name': vip.name} for vip in vip_facility]
