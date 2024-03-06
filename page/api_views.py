@@ -252,12 +252,12 @@ class HomeListAPIView(APIView):
 
 
 # 設備情報から設備に対応する部屋一覧を取得する
-def facility_rooms(facility_object, room_all):
-    filter_rooms = room_all.filter(facility=facility_object)
+def facility_rooms(facility_object):
+    limited_room = facility_object.limited_room.all()
     result = [{
         'id': room.id,
         'name': room.name
-    } for room in filter_rooms]
+    } for room in limited_room]
     return result
 
 
@@ -269,7 +269,7 @@ class FacilityListAPIView(APIView):
             room_all = Room.objects.all()
 
             # 通常設備
-            normal_facility_all = facility_all.filter(vip_flg=False, limited_flg=False)
+            normal_facility_all = facility_all.filter(vip_flg=False, limited_room=None)
             normal_lists = [{
                 'id': normal.id,
                 'name': normal.name,
@@ -285,7 +285,7 @@ class FacilityListAPIView(APIView):
             }
 
             # VIP設備
-            vip_facility_all = facility_all.filter(vip_flg=True)
+            vip_facility_all = facility_all.filter(vip_flg=True, limited_room=None)
             vip_lists = [{
                 'id': vip.id,
                 'name': vip.name,
@@ -308,7 +308,7 @@ class FacilityListAPIView(APIView):
             }
 
             # 限定設備
-            limited_facility_all = facility_all.filter(limited_flg=True)
+            limited_facility_all = facility_all.exclude(limited_room__exact=None)
             limited_result = []
             for limited in limited_facility_all:
                 img_path = ''
@@ -318,7 +318,7 @@ class FacilityListAPIView(APIView):
                     'id': limited.id,
                     'name': limited.name,
                     'img': img_path,
-                    'rooms': facility_rooms(limited, room_all)
+                    'rooms': facility_rooms(limited)
                 }
                 limited_result.append(limited)
 
@@ -350,11 +350,112 @@ class FacilityListAPIView(APIView):
 
 
 class RoomDetailView(APIView):
-    def get(selfself, request, pk):
-        room = Room.objects.get(id=pk)
-        images = [r for r in room.imgs.all()]
-        facility_all = room.facility.all()
-        limited_facilities = facility_all.filter(limited_flg=True)
-        limited_result = [{'id': limited.id, 'name': limited.name} for limited in limited_facilities]
-        vip_facility = facility_all.filter(vip_flg=True)
-        vip_result = [{'id': vip.id, 'name': vip.name} for vip in vip_facility]
+    def get(self, request, pk):
+        try:
+            room = Room.objects.get(id=pk)
+            images = [r.img for r in room.img.all()]
+            facility_all = Facility.objects.all()
+            limited_facilities = []
+            vip_facilities = []
+
+            limited_facility_all = facility_all.filter(limited_room=room)
+            if len(limited_facility_all) > 0:
+                limited_facilities = [
+                    {'id': limited.id, 'name': limited.name} for limited in limited_facility_all
+                ]
+            if room.type_id == 2:
+                vip_facility = facility_all.filter(vip_flg=True)
+                vip_facilities = [
+                    {'id': vip.id, 'name': vip.name} for vip in vip_facility
+                ]
+
+            normal_facility = facility_all.filter(vip_flg=False, limited_room=None)
+            normal_result = [{'id': normal.id, 'name': normal.name} for normal in normal_facility]
+            room_detail = {
+                'id': room.id,
+                'name': room.name,
+                'type': {'id': room.type.id, 'name': room.type.name},
+                'images': images,
+                'facilities': {
+                    'limited': limited_facilities,
+                    'vip': vip_facilities,
+                    'normal': normal_result
+                }
+            }
+            return Response(room_detail, status=200)
+        except Exception as e:
+            return Response(e, status=404)
+
+
+def get_menu_category(menu_type):
+    menu_category_all = MenuCategory.objects.all()
+    target_cat = menu_category_all.filter(type=menu_type)
+    result = [
+        {
+            'id': category.id,
+            'name': category.name,
+            'menus': get_menu(category)
+        }for category in target_cat
+    ]
+    return result
+
+def get_image(menu):
+    all_images = MenuImage.objects.all()
+    target_image = all_images.filter(menu=menu)
+    result = [
+        {
+            'id': image.id,
+            'image': image.img.path
+        }for image in target_image
+    ]
+    return result
+
+def get_menu(menu_category):
+    menu_all = Menu.objects.all()
+    target_menu = menu_all.filter(category=menu_category)
+    result = [
+        {
+            'id': menu.id,
+            'name': menu.name,
+            'price': menu.price,
+            'member_price': menu.member_price,
+            'welcome_flg': menu.welcome_flg,
+            'images': get_image(menu)
+        }for menu in target_menu
+    ]
+    return result
+
+def get_welcome():
+    menu_all = Menu.objects.all()
+    target_menu = menu_all.filter(welcome_flg=True)
+    result = [
+        {
+            'id': menu.id,
+            'name': menu.name,
+            'price': menu.price,
+            'member_price': menu.member_price,
+            'welcome_flg': menu.welcome_flg,
+            'images': get_image(menu)
+        } for menu in target_menu
+    ]
+    return result
+
+
+class MenuList(APIView):
+    def get(self, request):
+        try:
+            menu_type_all = MenuType.objects.all()
+            menu_all = [
+                {
+                    'id': type.id,
+                    'name': type.name,
+                    'categories': get_menu_category(type),
+                } for type in menu_type_all
+            ]
+            menu_result = {
+                'menu': menu_all,
+                'welcome': get_welcome()
+            }
+            return Response(menu_result, status=200)
+        except Exception as e:
+            return Response(e, status=404)

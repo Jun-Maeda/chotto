@@ -12,8 +12,10 @@ urlpatterns = [
     path('service/', api_views.ServiceListAPIView.as_view()),
     path('room_type/', api_views.RoomTypeListAPIView.as_view()),
     path('room_type/<str:pk>', api_views.RoomTypeDetailAPIView.as_view()),
+    path('room/<str:pk>', api_views.RoomDetailView.as_view()),
     path('home/', api_views.HomeListAPIView.as_view()),
     path('facility/', api_views.FacilityListAPIView.as_view()),
+    path('menu/', api_views.MenuList.as_view()),
     # path('service_name/', api_views.ServiceNameListAPIView.as_view()),
     # path('CleanUp/<uuid:pk>', views.cleanup, name='cleanup'),
 ]

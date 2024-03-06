@@ -105,12 +105,10 @@ class RoomAdmin(admin.ModelAdmin):
     list_filter = (
         'name',
         'type',
-        'facility'
     )
     search_fields = (
         'name',
         'type',
-        'facility'
     )
 
 class RoomInline(admin.StackedInline):
@@ -124,8 +122,7 @@ class FacilityAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'img',
-        'limited_flg',
-        'vip_flg'
+        'vip_flg',
     )
     list_display_links = (
         'name',

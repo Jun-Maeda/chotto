@@ -131,6 +131,8 @@ class Service(models.Model):
         return "[" + self.name.name + "]" + self.service_date.name + " " + self.service_time.name
 
 
+
+
 class RoomType(models.Model):
     class Meta:
         verbose_name_plural = "3.部屋タイプ"
@@ -171,29 +173,6 @@ class ServicePrice(models.Model):
     )
 
 
-# 設備
-class Facility(models.Model):
-    class Meta:
-        verbose_name_plural = "2.設備"
-
-    name = models.CharField(
-        max_length=50,
-        verbose_name='設備'
-    )
-    img = models.ImageField(
-        verbose_name='画像',
-        blank=True, null=True,
-    )
-    vip_flg = models.BooleanField(
-        verbose_name='VIP限定フラグ',
-        default=False,
-    )
-    limited_flg = models.BooleanField(
-        default=False,
-        verbose_name='限定フラグ',
-    )
-
-
 # 部屋画像
 class RoomImage(models.Model):
     img = models.ImageField(
@@ -218,12 +197,6 @@ class Room(models.Model):
         verbose_name='タイプ',
         on_delete=models.CASCADE,
     )
-    facility = models.ManyToManyField(
-        Facility,
-        verbose_name='設備',
-        related_name='room_facility',
-        blank=True, null=True,
-    )
     img = models.ManyToManyField(
         RoomImage,
         verbose_name='部屋画像',
@@ -235,6 +208,32 @@ class Room(models.Model):
         return self.name
 
 
+# 設備
+class Facility(models.Model):
+    class Meta:
+        verbose_name_plural = "2.設備"
+
+    name = models.CharField(
+        max_length=50,
+        verbose_name='設備'
+    )
+    img = models.ImageField(
+        verbose_name='画像',
+        blank=True, null=True,
+    )
+    vip_flg = models.BooleanField(
+        verbose_name='VIP限定',
+        default=False,
+    )
+    limited_room = models.ManyToManyField(
+        Room,
+        verbose_name='部屋限定',
+        related_name='facility_room',
+        null=True, blank=True
+    )
+
+    def __str__(self):
+        return self.name
 # メニュー関連
 class MenuType(models.Model):
     name = models.CharField(
