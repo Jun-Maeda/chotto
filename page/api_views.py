@@ -93,7 +93,7 @@ def get_service(name, service_all):
     except:
         return []
 
-
+# 作ったけどRoomTypeListで作ったやつ使うから不要
 class ServiceListAPIView(APIView):
     def get(self, request):
         try:
@@ -152,7 +152,7 @@ def get_service_prices(service_name, price_filter):
         price_filter = price_filter.filter(service=service_name).order_by('priority')
         filter_json = [{
             'id': price.id,
-            'serice_date': price.service_date.name,
+            'service_date': price.service_date.name,
             'price': price.price,
             'priority': price.priority
         }
@@ -168,7 +168,7 @@ def get_service_details(service_name, service_all):
         service_filter = service_all.filter(name=service_name).order_by('priority')
         filter_json = [{
             'id': service.id,
-            'serice_date': service.service_date.name,
+            'service_date': service.service_date.name,
             'service_time': service.service_time.name,
             'priority': service.priority
         }
@@ -214,6 +214,8 @@ class RoomTypeDetailAPIView(APIView):
             return Response(type_json, status=200)
         except:
             return Response("error", status=404)
+
+
 
 
 class HomeListAPIView(APIView):
