@@ -46,7 +46,7 @@ class InfoDetailAPIView(APIView):
                 'title': target_info.title,
                 'detail': target_info.detail,
                 'images': [{'id': img.id,
-                            'img': img.img.path
+                            'img': img.img.name
                             } for img in target_img(target_info)],
                 'make_date': target_info.make_date,
                 'update_date': target_info.update_date
@@ -69,7 +69,7 @@ class EventListAPIView(APIView):
                 'make_date': event.make_date,
                 'update_date': event.update_date,
                 'images': {'id': target_img(event)[0].id,
-                           'img': target_img(event)[0].img.path
+                           'img': target_img(event)[0].img.name
                            },
             } for event in all_event]
 
@@ -92,6 +92,7 @@ def get_service(name, service_all):
         return filter_json
     except:
         return []
+
 
 # 作ったけどRoomTypeListで作ったやつ使うから不要
 class ServiceListAPIView(APIView):
@@ -216,8 +217,6 @@ class RoomTypeDetailAPIView(APIView):
             return Response("error", status=404)
 
 
-
-
 class HomeListAPIView(APIView):
     def get(self, request):
         try:
@@ -239,7 +238,7 @@ class HomeListAPIView(APIView):
                 'make_date': event.make_date,
                 'update_date': event.update_date,
                 'images': {'id': target_img(event)[0].id,
-                           'img': target_img(event)[0].img.path
+                           'img': target_img(event)[0].img.name
                            },
             } for event in all_event]
 
@@ -279,7 +278,7 @@ class FacilityListAPIView(APIView):
             normal_imgs = []
             for normal in normal_facility_all:
                 if normal.img.name is not "":
-                    normal_imgs.append(normal.img.path)
+                    normal_imgs.append(normal.img.name)
 
             normal_result = {
                 'facilities': normal_lists,
@@ -295,7 +294,7 @@ class FacilityListAPIView(APIView):
             vip_imgs = []
             for vip in vip_facility_all:
                 if vip.img.name is not "":
-                    vip_imgs.append(vip.img.path)
+                    vip_imgs.append(vip.img.name)
 
             vip_rooms = Room.objects.filter(type__name='VIP')
             vip_room_lists = [{
@@ -315,7 +314,7 @@ class FacilityListAPIView(APIView):
             for limited in limited_facility_all:
                 img_path = ''
                 if limited.img.name is not "":
-                    img_path = limited.img.path
+                    img_path = limited.img.name
                 limited = {
                     'id': limited.id,
                     'name': limited.name,
@@ -349,6 +348,52 @@ class FacilityListAPIView(APIView):
 #             return Response(service_json, status=200)
 #         except:
 #             return Response("error", status=404)
+
+def get_facilities(room_obj):
+    facility_filter = Facility.objects.filter(limited_room=room_obj)
+    limited_facilities = []
+    if len(facility_filter) > 0:
+        limited_facilities = [
+            {'id': facility.id,
+             'name': facility.name,
+             }
+            for facility in facility_filter
+        ]
+    return limited_facilities
+
+def get_room_img(room_img_all):
+    if len(room_img_all) > 0:
+        return room_img_all[0].img.name
+    else:
+        return ''
+
+def get_list(room_obj_lists):
+    all_img = RoomImage.objects.all()
+    result = [{
+        'id': room.id,
+        'name': room.name,
+        'img': get_room_img(room.img.all()),
+        'limited': get_facilities(room)
+    } for room in room_obj_lists
+    ]
+    return result
+
+
+class RoomListView(APIView):
+    def get(self, request):
+        try:
+            room_types = RoomType.objects.all()
+            room_all = Room.objects.all()
+            room_lists = [
+                {'id': type.id,
+                 'name': type.name,
+                 'rooms': get_list(room_all.filter(type=type))
+                 }
+                for type in room_types
+            ]
+            return Response(room_lists, status=200)
+        except Exception as e:
+            return Response(e, status=404)
 
 
 class RoomDetailView(APIView):
@@ -397,9 +442,10 @@ def get_menu_category(menu_type):
             'id': category.id,
             'name': category.name,
             'menus': get_menu(category)
-        }for category in target_cat
+        } for category in target_cat
     ]
     return result
+
 
 def get_image(menu):
     all_images = MenuImage.objects.all()
@@ -407,10 +453,11 @@ def get_image(menu):
     result = [
         {
             'id': image.id,
-            'image': image.img.path
-        }for image in target_image
+            'image': image.img.name
+        } for image in target_image
     ]
     return result
+
 
 def get_menu(menu_category):
     menu_all = Menu.objects.all()
@@ -423,9 +470,10 @@ def get_menu(menu_category):
             'member_price': menu.member_price,
             'welcome_flg': menu.welcome_flg,
             'images': get_image(menu)
-        }for menu in target_menu
+        } for menu in target_menu
     ]
     return result
+
 
 def get_welcome():
     menu_all = Menu.objects.all()
