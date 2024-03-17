@@ -131,8 +131,6 @@ class Service(models.Model):
         return "[" + self.name.name + "]" + self.service_date.name + " " + self.service_time.name
 
 
-
-
 class RoomType(models.Model):
     class Meta:
         verbose_name_plural = "3.部屋タイプ"
@@ -234,6 +232,8 @@ class Facility(models.Model):
 
     def __str__(self):
         return self.name
+
+
 # メニュー関連
 class MenuType(models.Model):
     name = models.CharField(
@@ -294,6 +294,10 @@ class Menu(models.Model):
     welcome_flg = models.BooleanField(
         default=False,
         verbose_name='ウェルカムフラグ'
+    )
+    text = models.TextField(
+        verbose_name='詳細',
+        null=True, blank=True,
     )
 
 

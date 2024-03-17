@@ -469,7 +469,8 @@ def get_menu(menu_category):
             'price': menu.price,
             'member_price': menu.member_price,
             'welcome_flg': menu.welcome_flg,
-            'images': get_image(menu)
+            'images': get_image(menu),
+            'text': menu.text,
         } for menu in target_menu
     ]
     return result
