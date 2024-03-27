@@ -1,0 +1,5156 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-01-20T08:20:29.161Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Info object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-01-20T13:25:27.100Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Info object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"info image\", \"object\": \"InfoImage object (1)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-01-20T13:45:12.449Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Info object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-01-20T13:47:13.261Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Info object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u672c\\u6587\", \"\\u30a4\\u30d9\\u30f3\\u30c8\\u30d5\\u30e9\\u30b0\"]}}, {\"added\": {\"name\": \"info image\", \"object\": \"InfoImage object (2)\"}}, {\"added\": {\"name\": \"info image\", \"object\": \"InfoImage object (3)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-01-20T15:01:13.458Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "RoomType object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-01-20T15:01:57.252Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Service object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-01-20T15:02:55.243Z",
+      "user": 1,
+      "content_type": 19,
+      "object_id": "1",
+      "object_repr": "ServiceDate object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-01-20T15:04:13.552Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "1",
+      "object_repr": "ServiceTime object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-01-20T15:04:46.974Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "ServicePrice object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-01-20T15:19:55.357Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "MenuType object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-01-20T15:20:21.307Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Menu object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"menu image\", \"object\": \"MenuImage object (1)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-01-21T02:49:56.575Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "ServicePrice object (1)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-01-21T07:09:37.910Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "2",
+      "object_repr": "VIP",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-01-21T07:10:15.491Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "1",
+      "object_repr": "宿泊",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-01-21T07:11:59.846Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "宿泊",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-01-21T07:23:45.422Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "ServicePrice object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-01-21T07:26:55.285Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "2",
+      "object_repr": "ちょっとタイム（2H）",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-01-21T07:27:14.622Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "1",
+      "object_repr": "宿泊",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8868\\u793a\\u512a\\u5148\\u9806\\u4f4d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-01-21T07:27:30.247Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "3",
+      "object_repr": "休憩（3H）",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-01-21T07:27:41.642Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "4",
+      "object_repr": "フリータイム1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-01-21T07:28:02.217Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "5",
+      "object_repr": "フリータイム2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-01-21T07:28:16.008Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "6",
+      "object_repr": "深夜休憩",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-01-21T07:28:34.565Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "7",
+      "object_repr": "ご延長",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-01-21T07:30:33.438Z",
+      "user": 1,
+      "content_type": 19,
+      "object_id": "2",
+      "object_repr": "金・土・祝前日",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2024-01-21T07:31:02.623Z",
+      "user": 1,
+      "content_type": 19,
+      "object_id": "3",
+      "object_repr": "全日",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2024-01-21T07:31:37.755Z",
+      "user": 1,
+      "content_type": 19,
+      "object_id": "4",
+      "object_repr": "月～金・祝前日",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2024-01-21T07:31:49.783Z",
+      "user": 1,
+      "content_type": 19,
+      "object_id": "5",
+      "object_repr": "土・日・祝日",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2024-01-21T07:34:36.313Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "2",
+      "object_repr": "19:00～翌10:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2024-01-21T07:34:55.187Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "3",
+      "object_repr": "6:00～24:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2024-01-21T07:35:14.100Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "4",
+      "object_repr": "6:00～17:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2024-01-21T07:35:35.864Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "5",
+      "object_repr": "13:00～19:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2024-01-21T07:38:11.915Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "6",
+      "object_repr": "深夜0:00～　3時間のご利用",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2024-01-21T07:38:21.495Z",
+      "user": 1,
+      "content_type": 22,
+      "object_id": "7",
+      "object_repr": "30分",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2024-01-21T07:42:16.807Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "2",
+      "object_repr": "[ちょっとタイム（2H）]全日 6:00～24:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2024-01-21T07:42:44.648Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "3",
+      "object_repr": "[休憩（3H）]全日 6:00～24:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2024-01-21T07:43:10.676Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "4",
+      "object_repr": "[フリータイム1]全日 6:00～17:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2024-01-21T07:43:46.225Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "5",
+      "object_repr": "[フリータイム2]全日 13:00～19:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2024-01-21T07:44:23.088Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "6",
+      "object_repr": "[宿泊]金・土・祝前日 19:00～翌10:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2024-01-21T07:44:37.866Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "[宿泊]日～木・祝日 18:00～翌12:00",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8868\\u793a\\u512a\\u5148\\u9806\\u4f4d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2024-01-21T07:44:58.730Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "7",
+      "object_repr": "[深夜休憩]全日 深夜0:00～　3時間のご利用",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2024-01-21T07:45:17.260Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "8",
+      "object_repr": "[ご延長]全日 30分",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2024-01-21T07:45:55.402Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "2",
+      "object_repr": "ServicePrice object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2024-01-21T08:07:22.703Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "2",
+      "object_repr": "ServicePrice object (2)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2024-01-21T08:07:22.705Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "ServicePrice object (1)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2024-01-21T08:11:34.762Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "ServicePrice object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2024-01-21T08:11:52.446Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "2",
+      "object_repr": "ServicePrice object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2024-01-21T08:12:29.195Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "3",
+      "object_repr": "ServicePrice object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2024-01-21T08:14:32.725Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "1",
+      "object_repr": "ServicePrice object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8868\\u793a\\u512a\\u5148\\u9806\\u4f4d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2024-01-21T08:14:40.602Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "2",
+      "object_repr": "ServicePrice object (2)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2024-01-21T08:15:04.195Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "3",
+      "object_repr": "ServicePrice object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u4fa1\\u683c\", \"\\u8868\\u793a\\u512a\\u5148\\u9806\\u4f4d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2024-01-21T08:15:45.928Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "4",
+      "object_repr": "ServicePrice object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2024-01-21T08:16:15.971Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "5",
+      "object_repr": "ServicePrice object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2024-01-21T08:16:38.695Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "6",
+      "object_repr": "ServicePrice object (6)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2024-01-21T08:17:15.957Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "7",
+      "object_repr": "ServicePrice object (7)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2024-01-21T08:17:34.881Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "6",
+      "object_repr": "ServicePrice object (6)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u30b5\\u30fc\\u30d3\\u30b9\\u540d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2024-01-21T08:18:04.592Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "8",
+      "object_repr": "ServicePrice object (8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2024-01-21T08:18:37.541Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "9",
+      "object_repr": "ServicePrice object (9)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2024-01-21T08:19:00.036Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "10",
+      "object_repr": "ServicePrice object (10)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2024-01-21T08:19:34.751Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "11",
+      "object_repr": "ServicePrice object (11)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2024-01-21T08:19:55.943Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "12",
+      "object_repr": "ServicePrice object (12)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2024-01-21T08:20:46.956Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "1",
+      "object_repr": "ご宿泊",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u30b5\\u30fc\\u30d3\\u30b9\\u540d\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2024-01-21T08:23:00.824Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "13",
+      "object_repr": "ServicePrice object (13)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2024-01-21T08:23:17.850Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "14",
+      "object_repr": "ServicePrice object (14)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2024-01-21T08:23:39.339Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "15",
+      "object_repr": "ServicePrice object (15)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2024-01-21T08:24:02.788Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "16",
+      "object_repr": "ServicePrice object (16)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2024-01-21T08:24:27.841Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "17",
+      "object_repr": "ServicePrice object (17)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2024-01-21T08:24:47.366Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "18",
+      "object_repr": "ServicePrice object (18)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2024-01-21T08:25:38.524Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "19",
+      "object_repr": "ServicePrice object (19)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2024-01-21T08:25:55.987Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "20",
+      "object_repr": "ServicePrice object (20)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2024-01-21T08:27:10.228Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "21",
+      "object_repr": "ServicePrice object (21)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2024-01-21T08:27:29.160Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "22",
+      "object_repr": "ServicePrice object (22)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2024-01-21T08:27:51.106Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "23",
+      "object_repr": "ServicePrice object (23)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2024-01-21T08:28:26.429Z",
+      "user": 1,
+      "content_type": 21,
+      "object_id": "24",
+      "object_repr": "ServicePrice object (24)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2024-01-21T10:44:32.018Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "スタンダード",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"room\", \"object\": \"103\"}}, {\"added\": {\"name\": \"room\", \"object\": \"105\"}}, {\"added\": {\"name\": \"room\", \"object\": \"106\"}}, {\"added\": {\"name\": \"room\", \"object\": \"107\"}}, {\"added\": {\"name\": \"room\", \"object\": \"108\"}}, {\"added\": {\"name\": \"room\", \"object\": \"110\"}}, {\"added\": {\"name\": \"room\", \"object\": \"111\"}}, {\"added\": {\"name\": \"room\", \"object\": \"115\"}}, {\"added\": {\"name\": \"room\", \"object\": \"116\"}}, {\"added\": {\"name\": \"room\", \"object\": \"117\"}}, {\"added\": {\"name\": \"room\", \"object\": \"118\"}}, {\"added\": {\"name\": \"room\", \"object\": \"120\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2024-01-21T10:45:29.785Z",
+      "user": 1,
+      "content_type": 18,
+      "object_id": "2",
+      "object_repr": "VIP",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"room\", \"object\": \"101\"}}, {\"added\": {\"name\": \"room\", \"object\": \"102\"}}, {\"added\": {\"name\": \"room\", \"object\": \"112\"}}, {\"added\": {\"name\": \"room\", \"object\": \"113\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2024-01-21T13:50:33.006Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Info object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2024-01-21T13:50:43.601Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Info object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2024-01-23T12:38:02.700Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "ソフトドリンク",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u30e1\\u30cb\\u30e5\\u30fc\\u30b8\\u30e3\\u30f3\\u30eb\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2024-01-23T13:06:55.679Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "FOOD",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2024-01-23T13:07:05.753Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "2",
+      "object_repr": "DRINK",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2024-01-23T13:10:29.025Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "1",
+      "object_repr": "Beer ビール",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2024-01-23T13:10:46.681Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "2",
+      "object_repr": "Chu-Hi チューハイ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2024-01-23T13:11:03.731Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "3",
+      "object_repr": "Soft Drink ソフトドリンク",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2024-01-23T13:12:23.898Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Menu object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2024-01-23T13:12:50.795Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "2",
+      "object_repr": "Menu object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2024-02-19T12:16:19.664Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Info object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2024-02-19T12:17:40.897Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Info object (6)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"info image\", \"object\": \"\\u30c1\\u30e7\\u30b3\\u30ec\\u30fc\\u30c8\\u98a8\\u5442A4\\u65e5\\u4ed8\\u7121\\u3057_1.jpg\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2024-02-19T12:17:59.076Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Info object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"info image\", \"object\": \"2023\\u5e74\\u30af\\u30ea\\u30b9\\u30de\\u30b9\\u30a4\\u30d9\\u30f3\\u30c8.jpg\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2024-02-19T12:19:09.577Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Info object (7)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"info image\", \"object\": \"DOVE\\u30d7\\u30ec\\u30bc\\u30f3\\u30c8A4.jpg\"}}, {\"added\": {\"name\": \"info image\", \"object\": \"SPRING-MENU.jpg\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2024-02-19T12:19:16.242Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Info object (7)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u30a4\\u30d9\\u30f3\\u30c8\\u30d5\\u30e9\\u30b0\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2024-02-21T13:45:03.327Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "Facility object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2024-02-21T13:48:19.437Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "2",
+      "object_repr": "Facility object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2024-02-21T13:48:37.311Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "3",
+      "object_repr": "Facility object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2024-02-21T13:48:53.320Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "4",
+      "object_repr": "Facility object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2024-02-21T13:52:37.291Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "4",
+      "object_repr": "Facility object (4)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"VIP\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\", \"\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2024-02-21T13:52:43.140Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "3",
+      "object_repr": "Facility object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"VIP\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\", \"\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2024-02-21T13:52:48.285Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "2",
+      "object_repr": "Facility object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"VIP\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\", \"\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2024-02-21T13:52:53.011Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "Facility object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"VIP\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\", \"\\u9650\\u5b9a\\u30d5\\u30e9\\u30b0\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2024-02-21T13:53:44.146Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "5",
+      "object_repr": "Facility object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2024-02-21T13:54:12.853Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "6",
+      "object_repr": "Facility object (6)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2024-02-21T13:54:25.458Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "7",
+      "object_repr": "Facility object (7)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2024-02-21T13:55:13.725Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "8",
+      "object_repr": "Facility object (8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2024-02-21T13:55:25.449Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "9",
+      "object_repr": "Facility object (9)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2024-02-21T13:55:32.522Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "10",
+      "object_repr": "Facility object (10)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2024-02-21T13:55:46.138Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "11",
+      "object_repr": "Facility object (11)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2024-02-21T13:55:57.125Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "12",
+      "object_repr": "Facility object (12)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2024-02-21T13:56:07.583Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "13",
+      "object_repr": "Facility object (13)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2024-02-21T13:56:18.121Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "14",
+      "object_repr": "Facility object (14)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2024-02-21T13:56:31.639Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "15",
+      "object_repr": "Facility object (15)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2024-02-21T13:56:47.090Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "16",
+      "object_repr": "Facility object (16)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2024-02-21T14:16:29.921Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "16",
+      "object_repr": "Facility object (16)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u753b\\u50cf\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2024-02-21T15:03:13.276Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "5",
+      "object_repr": "Facility object (5)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u753b\\u50cf\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2024-03-02T08:47:16.321Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "17",
+      "object_repr": "カラオケ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2024-03-02T09:09:41.396Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "11",
+      "object_repr": "浴室TV",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2024-03-02T09:09:41.400Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "5",
+      "object_repr": "カラオケ",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2024-03-02T09:10:21.069Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "7",
+      "object_repr": "ダイエットトレーナーコア",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u9650\\u5b9a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2024-03-02T12:39:53.784Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "6",
+      "object_repr": "100インチプロジェクター",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u9650\\u5b9a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2024-03-02T12:53:44.879Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "17",
+      "object_repr": "カラオケ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u9650\\u5b9a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2024-03-02T12:57:06.820Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "6",
+      "object_repr": "100インチプロジェクター",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u9650\\u5b9a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2024-03-02T12:57:29.914Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "17",
+      "object_repr": "カラオケ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u9650\\u5b9a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2024-03-02T12:57:53.394Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "7",
+      "object_repr": "ダイエットトレーナーコア",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u9650\\u5b9a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2024-03-02T12:58:19.717Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "18",
+      "object_repr": "75インチ大型TV",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2024-03-06T13:39:58.805Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Menu object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"menu image\", \"object\": \"\\u30b3\\u30fc\\u30d2\\u30fc\\u305c\\u308a\\u30fc.jpg\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+      "action_time": "2024-03-13T14:18:19.476Z",
+      "user": 1,
+      "content_type": 25,
+      "object_id": "1",
+      "object_repr": "room_1.jpg",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+      "action_time": "2024-03-13T14:18:22.205Z",
+      "user": 1,
+      "content_type": 20,
+      "object_id": "16",
+      "object_repr": "113",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u90e8\\u5c4b\\u753b\\u50cf\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+      "action_time": "2024-03-17T07:04:42.242Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "4",
+      "object_repr": "洋食",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+      "action_time": "2024-03-17T07:05:05.013Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "5",
+      "object_repr": "丼",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+      "action_time": "2024-03-17T07:05:24.509Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "6",
+      "object_repr": "炒",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+      "action_time": "2024-03-17T07:05:58.289Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "7",
+      "object_repr": "麺",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+      "action_time": "2024-03-17T07:06:16.939Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "8",
+      "object_repr": "Side",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+      "action_time": "2024-03-17T07:08:25.648Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Menu object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+      "action_time": "2024-03-17T07:09:26.148Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "4",
+      "object_repr": "Menu object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+      "action_time": "2024-03-17T07:09:31.029Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Menu object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+      "action_time": "2024-03-17T07:10:17.348Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "5",
+      "object_repr": "Menu object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+      "action_time": "2024-03-17T07:11:22.435Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Menu object (6)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+      "action_time": "2024-03-17T07:12:58.738Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Menu object (7)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+      "action_time": "2024-03-17T07:13:30.989Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Menu object (8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+      "action_time": "2024-03-17T07:14:17.585Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Menu object (8)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+      "action_time": "2024-03-17T07:15:01.891Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "9",
+      "object_repr": "Menu object (9)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+      "action_time": "2024-03-17T07:15:34.089Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "10",
+      "object_repr": "Menu object (10)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+      "action_time": "2024-03-17T07:16:02.494Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "11",
+      "object_repr": "Menu object (11)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+      "action_time": "2024-03-17T07:16:09.761Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "4",
+      "object_repr": "Menu object (4)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+      "action_time": "2024-03-17T07:16:24.090Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Menu object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+      "action_time": "2024-03-17T07:16:31.292Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "5",
+      "object_repr": "Menu object (5)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+      "action_time": "2024-03-17T07:16:37.699Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Menu object (6)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+      "action_time": "2024-03-17T07:16:46.330Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Menu object (7)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+      "action_time": "2024-03-17T07:16:53.350Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Menu object (8)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u8a73\\u7d30\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+      "action_time": "2024-03-17T07:16:58.065Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Menu object (8)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+      "action_time": "2024-03-17T07:17:54.572Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "12",
+      "object_repr": "Menu object (12)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+      "action_time": "2024-03-17T07:18:34.721Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "13",
+      "object_repr": "Menu object (13)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+      "action_time": "2024-03-17T07:18:58.335Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "14",
+      "object_repr": "Menu object (14)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+      "action_time": "2024-03-17T07:19:28.270Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "15",
+      "object_repr": "Menu object (15)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+      "action_time": "2024-03-17T07:20:03.703Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "7",
+      "object_repr": "麺",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+      "action_time": "2024-03-17T07:20:27.915Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "9",
+      "object_repr": "うどん",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+      "action_time": "2024-03-17T07:20:44.437Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "10",
+      "object_repr": "そば",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+      "action_time": "2024-03-17T07:21:00.011Z",
+      "user": 1,
+      "content_type": 26,
+      "object_id": "11",
+      "object_repr": "ラーメン",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+      "action_time": "2024-03-17T07:21:44.923Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "16",
+      "object_repr": "Menu object (16)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+      "action_time": "2024-03-17T07:22:07.839Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "17",
+      "object_repr": "Menu object (17)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+      "action_time": "2024-03-17T07:22:28.476Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "18",
+      "object_repr": "Menu object (18)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+      "action_time": "2024-03-17T07:22:47.823Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "19",
+      "object_repr": "Menu object (19)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+      "action_time": "2024-03-17T07:23:10.580Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "20",
+      "object_repr": "Menu object (20)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+      "action_time": "2024-03-17T07:23:39.473Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "21",
+      "object_repr": "Menu object (21)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+      "action_time": "2024-03-17T07:24:11.977Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "22",
+      "object_repr": "Menu object (22)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+      "action_time": "2024-03-17T07:24:26.541Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "23",
+      "object_repr": "Menu object (23)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+      "action_time": "2024-03-17T07:25:02.567Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "24",
+      "object_repr": "Menu object (24)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+      "action_time": "2024-03-17T07:25:27.448Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "25",
+      "object_repr": "Menu object (25)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+      "action_time": "2024-03-17T07:25:53.602Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "26",
+      "object_repr": "Menu object (26)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+      "action_time": "2024-03-17T07:33:38.365Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "27",
+      "object_repr": "Menu object (27)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+      "action_time": "2024-03-17T07:34:28.585Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "28",
+      "object_repr": "Menu object (28)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+      "action_time": "2024-03-17T07:34:48.608Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "29",
+      "object_repr": "Menu object (29)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+      "action_time": "2024-03-17T07:35:11.630Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "30",
+      "object_repr": "Menu object (30)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+      "action_time": "2024-03-17T07:35:30.429Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "31",
+      "object_repr": "Menu object (31)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+      "action_time": "2024-03-17T07:36:00.034Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "32",
+      "object_repr": "Menu object (32)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+      "action_time": "2024-03-17T07:36:27.223Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "33",
+      "object_repr": "Menu object (33)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+      "action_time": "2024-03-17T07:36:51.438Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "34",
+      "object_repr": "Menu object (34)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+      "action_time": "2024-03-17T07:37:17.743Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "35",
+      "object_repr": "Menu object (35)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+      "action_time": "2024-03-17T07:37:42.277Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "36",
+      "object_repr": "Menu object (36)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+      "action_time": "2024-03-17T07:38:07.232Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "37",
+      "object_repr": "Menu object (37)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+      "action_time": "2024-03-17T07:38:53.795Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "38",
+      "object_repr": "Menu object (38)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add info",
+      "content_type": 7,
+      "codename": "add_info"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change info",
+      "content_type": 7,
+      "codename": "change_info"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete info",
+      "content_type": 7,
+      "codename": "delete_info"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view info",
+      "content_type": 7,
+      "codename": "view_info"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add image",
+      "content_type": 8,
+      "codename": "add_image"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change image",
+      "content_type": 8,
+      "codename": "change_image"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete image",
+      "content_type": 8,
+      "codename": "delete_image"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view image",
+      "content_type": 8,
+      "codename": "view_image"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add info image",
+      "content_type": 9,
+      "codename": "add_infoimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change info image",
+      "content_type": 9,
+      "codename": "change_infoimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete info image",
+      "content_type": 9,
+      "codename": "delete_infoimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view info image",
+      "content_type": 9,
+      "codename": "view_infoimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add event",
+      "content_type": 10,
+      "codename": "add_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change event",
+      "content_type": 10,
+      "codename": "change_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete event",
+      "content_type": 10,
+      "codename": "delete_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view event",
+      "content_type": 10,
+      "codename": "view_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add event image",
+      "content_type": 11,
+      "codename": "add_eventimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change event image",
+      "content_type": 11,
+      "codename": "change_eventimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete event image",
+      "content_type": 11,
+      "codename": "delete_eventimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view event image",
+      "content_type": 11,
+      "codename": "view_eventimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add Token",
+      "content_type": 12,
+      "codename": "add_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change Token",
+      "content_type": 12,
+      "codename": "change_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete Token",
+      "content_type": 12,
+      "codename": "delete_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view Token",
+      "content_type": 12,
+      "codename": "view_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add token",
+      "content_type": 13,
+      "codename": "add_tokenproxy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change token",
+      "content_type": 13,
+      "codename": "change_tokenproxy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete token",
+      "content_type": 13,
+      "codename": "delete_tokenproxy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view token",
+      "content_type": 13,
+      "codename": "view_tokenproxy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add facility",
+      "content_type": 14,
+      "codename": "add_facility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change facility",
+      "content_type": 14,
+      "codename": "change_facility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete facility",
+      "content_type": 14,
+      "codename": "delete_facility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view facility",
+      "content_type": 14,
+      "codename": "view_facility"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add menu type",
+      "content_type": 15,
+      "codename": "add_menutype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change menu type",
+      "content_type": 15,
+      "codename": "change_menutype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete menu type",
+      "content_type": 15,
+      "codename": "delete_menutype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view menu type",
+      "content_type": 15,
+      "codename": "view_menutype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add menu",
+      "content_type": 16,
+      "codename": "add_menu"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change menu",
+      "content_type": 16,
+      "codename": "change_menu"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete menu",
+      "content_type": 16,
+      "codename": "delete_menu"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view menu",
+      "content_type": 16,
+      "codename": "view_menu"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add service",
+      "content_type": 17,
+      "codename": "add_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change service",
+      "content_type": 17,
+      "codename": "change_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete service",
+      "content_type": 17,
+      "codename": "delete_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view service",
+      "content_type": 17,
+      "codename": "view_service"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add room type",
+      "content_type": 18,
+      "codename": "add_roomtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change room type",
+      "content_type": 18,
+      "codename": "change_roomtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete room type",
+      "content_type": 18,
+      "codename": "delete_roomtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view room type",
+      "content_type": 18,
+      "codename": "view_roomtype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add service date",
+      "content_type": 19,
+      "codename": "add_servicedate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change service date",
+      "content_type": 19,
+      "codename": "change_servicedate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete service date",
+      "content_type": 19,
+      "codename": "delete_servicedate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view service date",
+      "content_type": 19,
+      "codename": "view_servicedate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add room",
+      "content_type": 20,
+      "codename": "add_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change room",
+      "content_type": 20,
+      "codename": "change_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete room",
+      "content_type": 20,
+      "codename": "delete_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view room",
+      "content_type": 20,
+      "codename": "view_room"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add service price",
+      "content_type": 21,
+      "codename": "add_serviceprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change service price",
+      "content_type": 21,
+      "codename": "change_serviceprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete service price",
+      "content_type": 21,
+      "codename": "delete_serviceprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view service price",
+      "content_type": 21,
+      "codename": "view_serviceprice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add service time",
+      "content_type": 22,
+      "codename": "add_servicetime"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change service time",
+      "content_type": 22,
+      "codename": "change_servicetime"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete service time",
+      "content_type": 22,
+      "codename": "delete_servicetime"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view service time",
+      "content_type": 22,
+      "codename": "view_servicetime"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add menu image",
+      "content_type": 23,
+      "codename": "add_menuimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change menu image",
+      "content_type": 23,
+      "codename": "change_menuimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete menu image",
+      "content_type": 23,
+      "codename": "delete_menuimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view menu image",
+      "content_type": 23,
+      "codename": "view_menuimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+      "name": "Can add service name",
+      "content_type": 24,
+      "codename": "add_servicename"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+      "name": "Can change service name",
+      "content_type": 24,
+      "codename": "change_servicename"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+      "name": "Can delete service name",
+      "content_type": 24,
+      "codename": "delete_servicename"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+      "name": "Can view service name",
+      "content_type": 24,
+      "codename": "view_servicename"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+      "name": "Can add room image",
+      "content_type": 25,
+      "codename": "add_roomimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+      "name": "Can change room image",
+      "content_type": 25,
+      "codename": "change_roomimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+      "name": "Can delete room image",
+      "content_type": 25,
+      "codename": "delete_roomimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+      "name": "Can view room image",
+      "content_type": 25,
+      "codename": "view_roomimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+      "name": "Can add menu category",
+      "content_type": 26,
+      "codename": "add_menucategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+      "name": "Can change menu category",
+      "content_type": 26,
+      "codename": "change_menucategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+      "name": "Can delete menu category",
+      "content_type": 26,
+      "codename": "delete_menucategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+      "name": "Can view menu category",
+      "content_type": 26,
+      "codename": "view_menucategory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+      "name": "Can add limited",
+      "content_type": 27,
+      "codename": "add_limited"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+      "name": "Can change limited",
+      "content_type": 27,
+      "codename": "change_limited"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+      "name": "Can delete limited",
+      "content_type": 27,
+      "codename": "delete_limited"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+      "name": "Can view limited",
+      "content_type": 27,
+      "codename": "view_limited"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Qqd7fdb2xkQoBnFmvRUs1h$OOTdmw9T55H/FtT8ecLTEnCLI2lHwiZtMBx7uusrIXM=",
+      "last_login": "2024-03-06T13:07:06.637Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "jun.mermaid.voice@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-20T07:47:43.832Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "page",
+      "model": "info"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "page",
+      "model": "image"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "page",
+      "model": "infoimage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "page",
+      "model": "event"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "page",
+      "model": "eventimage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "authtoken",
+      "model": "token"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "authtoken",
+      "model": "tokenproxy"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "page",
+      "model": "facility"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "page",
+      "model": "menutype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "page",
+      "model": "menu"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "page",
+      "model": "service"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "page",
+      "model": "roomtype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "page",
+      "model": "servicedate"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "page",
+      "model": "room"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "page",
+      "model": "serviceprice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "page",
+      "model": "servicetime"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "page",
+      "model": "menuimage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "page",
+      "model": "servicename"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+      "app_label": "page",
+      "model": "roomimage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+      "app_label": "page",
+      "model": "menucategory"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+      "app_label": "page",
+      "model": "limited"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8k08e4v15b12t72vprf4va7skvi7btpk",
+    "fields": {
+      "session_data": ".eJxVjMsOgjAQRf-la9NQajutS_d8A5lHR1ADCYWV8d-VhIVu7znnvkyP2zr0Wy1LP4q5GGdOvxshP8q0A7njdJstz9O6jGR3xR602m6W8rwe7t_BgHX41tRkLoQYVdlHIGnVuyYAeGjKWZyTzK0mpyAQE-cAPrBSItTSQlDz_gAB4jij:1rR6IU:GSSMEKh8wn9GOQOOogmKJBe6YPaK-YKkKk3jrqrz7wY",
+      "expire_date": "2024-02-03T08:01:46.041Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ezvanzyviasbzacah8vsv2pr47bzfca6",
+    "fields": {
+      "session_data": ".eJxVjMsOgjAQRf-la9NQajutS_d8A5lHR1ADCYWV8d-VhIVu7znnvkyP2zr0Wy1LP4q5GGdOvxshP8q0A7njdJstz9O6jGR3xR602m6W8rwe7t_BgHX41tRkLoQYVdlHIGnVuyYAeGjKWZyTzK0mpyAQE-cAPrBSItTSQlDz_gAB4jij:1rc2R8:LjNKUgNc6Dq4U9DKwuq1c_5hTCtBB5X1VSl6FBlB3Uk",
+      "expire_date": "2024-03-04T12:07:54.732Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "fxyswj2hk7v1o9xiz7al7wth4azse037",
+    "fields": {
+      "session_data": ".eJxVjMsOgjAQRf-la9NQajutS_d8A5lHR1ADCYWV8d-VhIVu7znnvkyP2zr0Wy1LP4q5GGdOvxshP8q0A7njdJstz9O6jGR3xR602m6W8rwe7t_BgHX41tRkLoQYVdlHIGnVuyYAeGjKWZyTzK0mpyAQE-cAPrBSItTSQlDz_gAB4jij:1rhqzC:laVJI91zHNdLAW6uHlAWiyCuwCAnhGOg9rFmxbUqyrU",
+      "expire_date": "2024-03-20T13:07:06.638Z"
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "title": "test",
+      "detail": "test",
+      "make_date": "2024-01-20T08:18:54Z",
+      "update_date": "2024-01-20T08:18:54Z",
+      "event_flg": false
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "title": "イベント",
+      "detail": "イベントがはじまります！\r\nみなさんこぞって参加してください!",
+      "make_date": "2024-01-20T13:45:12.442Z",
+      "update_date": "2024-01-20T13:45:12.442Z",
+      "event_flg": true
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "title": "こんにちは",
+      "detail": "これはテストです。",
+      "make_date": "2024-01-21T13:50:33.001Z",
+      "update_date": "2024-01-21T13:50:33.001Z",
+      "event_flg": true
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "title": "こんばんは",
+      "detail": "これはテストです。",
+      "make_date": "2024-01-21T13:50:43.594Z",
+      "update_date": "2024-01-21T13:50:43.594Z",
+      "event_flg": false
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "title": "お正月の営業について",
+      "detail": "お正月の営業についてお正月の営業について\r\nお正月の営業についてお正月の営業についてお正月の営業について\r\nお正月の営業についてお正月の営業について",
+      "make_date": "2024-02-19T12:16:19.656Z",
+      "update_date": "2024-02-19T12:16:19.656Z",
+      "event_flg": false
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "title": "バレンタインイベントのお知らせ",
+      "detail": "バレンタインイベントのお知らせバレンタインイベントのお知らせ\r\nバレンタインイベントのお知らせバレンタインイベントのお知らせ\r\nバレンタインイベントのお知らせバレンタインイベントのお知らせバレンタインイベントのお知らせ",
+      "make_date": "2024-02-19T12:17:40.621Z",
+      "update_date": "2024-02-19T12:17:40.621Z",
+      "event_flg": true
+    }
+  },
+  {
+    "model": "page.info",
+    "pk": 7,
+    "fields": {
+      "user": 1,
+      "title": "イベント",
+      "detail": "イベント",
+      "make_date": "2024-02-19T12:19:09.565Z",
+      "update_date": "2024-02-19T12:19:09.565Z",
+      "event_flg": true
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 1,
+    "fields": {
+      "img": "2644203.png",
+      "info": 1
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 2,
+    "fields": {
+      "img": "icn_bananaday.png",
+      "info": 2
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 3,
+    "fields": {
+      "img": "フルコ月抽選バナー.jpg",
+      "info": 2
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 4,
+    "fields": {
+      "img": "チョコレート風呂A4日付無し_1.jpg",
+      "info": 6
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 5,
+    "fields": {
+      "img": "2023年クリスマスイベント.jpg",
+      "info": 3
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 6,
+    "fields": {
+      "img": "DOVEプレゼントA4.jpg",
+      "info": 7
+    }
+  },
+  {
+    "model": "page.infoimage",
+    "pk": 7,
+    "fields": {
+      "img": "SPRING-MENU.jpg",
+      "info": 7
+    }
+  },
+  {
+    "model": "page.servicedate",
+    "pk": 1,
+    "fields": {
+      "name": "日～木・祝日",
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.servicedate",
+    "pk": 2,
+    "fields": {
+      "name": "金・土・祝前日",
+      "priority": 2.0
+    }
+  },
+  {
+    "model": "page.servicedate",
+    "pk": 3,
+    "fields": {
+      "name": "全日",
+      "priority": 3.0
+    }
+  },
+  {
+    "model": "page.servicedate",
+    "pk": 4,
+    "fields": {
+      "name": "月～金・祝前日",
+      "priority": 4.0
+    }
+  },
+  {
+    "model": "page.servicedate",
+    "pk": 5,
+    "fields": {
+      "name": "土・日・祝日",
+      "priority": 5.0
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 1,
+    "fields": {
+      "name": "18:00～翌12:00",
+      "all_flg": false,
+      "start_time": "18:00:00",
+      "end_time": "12:00:00"
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 2,
+    "fields": {
+      "name": "19:00～翌10:00",
+      "all_flg": false,
+      "start_time": "19:00:00",
+      "end_time": "10:00:00"
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 3,
+    "fields": {
+      "name": "6:00～24:00",
+      "all_flg": false,
+      "start_time": "06:00:00",
+      "end_time": "00:00:00"
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 4,
+    "fields": {
+      "name": "6:00～17:00",
+      "all_flg": false,
+      "start_time": "06:00:00",
+      "end_time": "17:00:00"
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 5,
+    "fields": {
+      "name": "13:00～19:00",
+      "all_flg": false,
+      "start_time": "13:00:00",
+      "end_time": "19:00:00"
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 6,
+    "fields": {
+      "name": "深夜0:00～　3時間のご利用",
+      "all_flg": true,
+      "start_time": null,
+      "end_time": null
+    }
+  },
+  {
+    "model": "page.servicetime",
+    "pk": 7,
+    "fields": {
+      "name": "30分",
+      "all_flg": true,
+      "start_time": null,
+      "end_time": null
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 1,
+    "fields": {
+      "name": "ご宿泊",
+      "priority": 5.0
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 2,
+    "fields": {
+      "name": "ちょっとタイム（2H）",
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 3,
+    "fields": {
+      "name": "休憩（3H）",
+      "priority": 2.0
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 4,
+    "fields": {
+      "name": "フリータイム1",
+      "priority": 3.0
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 5,
+    "fields": {
+      "name": "フリータイム2",
+      "priority": 4.0
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 6,
+    "fields": {
+      "name": "深夜休憩",
+      "priority": 6.0
+    }
+  },
+  {
+    "model": "page.servicename",
+    "pk": 7,
+    "fields": {
+      "name": "ご延長",
+      "priority": 7.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 1,
+    "fields": {
+      "name": 1,
+      "service_date": 1,
+      "service_time": 1,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 2,
+    "fields": {
+      "name": 2,
+      "service_date": 3,
+      "service_time": 3,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 3,
+    "fields": {
+      "name": 3,
+      "service_date": 3,
+      "service_time": 3,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 4,
+    "fields": {
+      "name": 4,
+      "service_date": 3,
+      "service_time": 4,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 5,
+    "fields": {
+      "name": 5,
+      "service_date": 3,
+      "service_time": 5,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 6,
+    "fields": {
+      "name": 1,
+      "service_date": 2,
+      "service_time": 2,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 7,
+    "fields": {
+      "name": 6,
+      "service_date": 3,
+      "service_time": 6,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.service",
+    "pk": 8,
+    "fields": {
+      "name": 7,
+      "service_date": 3,
+      "service_time": 7,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.roomtype",
+    "pk": 1,
+    "fields": {
+      "name": "スタンダード"
+    }
+  },
+  {
+    "model": "page.roomtype",
+    "pk": 2,
+    "fields": {
+      "name": "VIP"
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 1,
+    "fields": {
+      "room_type": 1,
+      "service": 2,
+      "service_date": 4,
+      "price": 4700,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 2,
+    "fields": {
+      "room_type": 1,
+      "service": 2,
+      "service_date": 5,
+      "price": 5300,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 3,
+    "fields": {
+      "room_type": 1,
+      "service": 3,
+      "service_date": 4,
+      "price": 5800,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 4,
+    "fields": {
+      "room_type": 1,
+      "service": 3,
+      "service_date": 5,
+      "price": 6300,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 5,
+    "fields": {
+      "room_type": 1,
+      "service": 4,
+      "service_date": 4,
+      "price": 6300,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 6,
+    "fields": {
+      "room_type": 1,
+      "service": 4,
+      "service_date": 5,
+      "price": 6800,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 7,
+    "fields": {
+      "room_type": 1,
+      "service": 5,
+      "service_date": 5,
+      "price": 7300,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 8,
+    "fields": {
+      "room_type": 1,
+      "service": 5,
+      "service_date": 4,
+      "price": 6800,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 9,
+    "fields": {
+      "room_type": 1,
+      "service": 1,
+      "service_date": 1,
+      "price": 7800,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 10,
+    "fields": {
+      "room_type": 1,
+      "service": 1,
+      "service_date": 2,
+      "price": 8400,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 11,
+    "fields": {
+      "room_type": 1,
+      "service": 6,
+      "service_date": 2,
+      "price": 7300,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 12,
+    "fields": {
+      "room_type": 1,
+      "service": 7,
+      "service_date": 3,
+      "price": 1000,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 13,
+    "fields": {
+      "room_type": 2,
+      "service": 2,
+      "service_date": 4,
+      "price": 5200,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 14,
+    "fields": {
+      "room_type": 2,
+      "service": 2,
+      "service_date": 5,
+      "price": 5800,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 15,
+    "fields": {
+      "room_type": 2,
+      "service": 3,
+      "service_date": 4,
+      "price": 6300,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 16,
+    "fields": {
+      "room_type": 2,
+      "service": 3,
+      "service_date": 5,
+      "price": 6800,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 17,
+    "fields": {
+      "room_type": 2,
+      "service": 4,
+      "service_date": 4,
+      "price": 6800,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 18,
+    "fields": {
+      "room_type": 2,
+      "service": 4,
+      "service_date": 5,
+      "price": 7300,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 19,
+    "fields": {
+      "room_type": 2,
+      "service": 5,
+      "service_date": 4,
+      "price": 7300,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 20,
+    "fields": {
+      "room_type": 2,
+      "service": 5,
+      "service_date": 5,
+      "price": 7800,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 21,
+    "fields": {
+      "room_type": 2,
+      "service": 1,
+      "service_date": 2,
+      "price": 8900,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 22,
+    "fields": {
+      "room_type": 2,
+      "service": 6,
+      "service_date": 1,
+      "price": 6800,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 23,
+    "fields": {
+      "room_type": 2,
+      "service": 6,
+      "service_date": 2,
+      "price": 7800,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.serviceprice",
+    "pk": 24,
+    "fields": {
+      "room_type": 2,
+      "service": 7,
+      "service_date": 3,
+      "price": 1000,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.roomimage",
+    "pk": 1,
+    "fields": {
+      "img": "room_1.jpg"
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 1,
+    "fields": {
+      "name": "103",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 2,
+    "fields": {
+      "name": "105",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 3,
+    "fields": {
+      "name": "106",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 4,
+    "fields": {
+      "name": "107",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 5,
+    "fields": {
+      "name": "108",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 6,
+    "fields": {
+      "name": "110",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 7,
+    "fields": {
+      "name": "111",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 8,
+    "fields": {
+      "name": "115",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 9,
+    "fields": {
+      "name": "116",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 10,
+    "fields": {
+      "name": "117",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 11,
+    "fields": {
+      "name": "118",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 12,
+    "fields": {
+      "name": "120",
+      "type": 1,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 13,
+    "fields": {
+      "name": "101",
+      "type": 2,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 14,
+    "fields": {
+      "name": "102",
+      "type": 2,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 15,
+    "fields": {
+      "name": "112",
+      "type": 2,
+      "img": []
+    }
+  },
+  {
+    "model": "page.room",
+    "pk": 16,
+    "fields": {
+      "name": "113",
+      "type": 2,
+      "img": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 1,
+    "fields": {
+      "name": "高級サロン仕様のインバスアイテム",
+      "img": "",
+      "vip_flg": true,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 2,
+    "fields": {
+      "name": "大風量ドライヤー",
+      "img": "",
+      "vip_flg": true,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 3,
+    "fields": {
+      "name": "ウォーターサーバー",
+      "img": "",
+      "vip_flg": true,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 4,
+    "fields": {
+      "name": "加湿機能付き空気清浄機",
+      "img": "",
+      "vip_flg": true,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 6,
+    "fields": {
+      "name": "100インチプロジェクター",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": [
+        14,
+        15,
+        16
+      ]
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 7,
+    "fields": {
+      "name": "ダイエットトレーナーコア",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": [
+        13
+      ]
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 8,
+    "fields": {
+      "name": "VOD",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 9,
+    "fields": {
+      "name": "ブルーレイ",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 10,
+    "fields": {
+      "name": "ブロアーバス",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 12,
+    "fields": {
+      "name": "浴室TV",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 13,
+    "fields": {
+      "name": "ドライヤー",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 14,
+    "fields": {
+      "name": "ファブリックスプレー",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 15,
+    "fields": {
+      "name": "スキンケア",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 16,
+    "fields": {
+      "name": "シャンプー・コンディショナー",
+      "img": "DOVEプレゼントA4_OBvSwFi.jpg",
+      "vip_flg": false,
+      "limited_room": []
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 17,
+    "fields": {
+      "name": "カラオケ",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": [
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "model": "page.facility",
+    "pk": 18,
+    "fields": {
+      "name": "75インチ大型TV",
+      "img": "",
+      "vip_flg": false,
+      "limited_room": [
+        13
+      ]
+    }
+  },
+  {
+    "model": "page.menutype",
+    "pk": 1,
+    "fields": {
+      "name": "FOOD",
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.menutype",
+    "pk": 2,
+    "fields": {
+      "name": "DRINK",
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 1,
+    "fields": {
+      "name": "Beer ビール",
+      "type": 2,
+      "priority": 0.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 2,
+    "fields": {
+      "name": "Chu-Hi チューハイ",
+      "type": 2,
+      "priority": 2.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 3,
+    "fields": {
+      "name": "Soft Drink ソフトドリンク",
+      "type": 2,
+      "priority": 3.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 4,
+    "fields": {
+      "name": "洋食",
+      "type": 1,
+      "priority": 1.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 5,
+    "fields": {
+      "name": "丼",
+      "type": 1,
+      "priority": 2.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 6,
+    "fields": {
+      "name": "炒",
+      "type": 1,
+      "priority": 3.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 8,
+    "fields": {
+      "name": "Side",
+      "type": 1,
+      "priority": 4.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 9,
+    "fields": {
+      "name": "うどん",
+      "type": 1,
+      "priority": 4.0
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 10,
+    "fields": {
+      "name": "そば",
+      "type": 1,
+      "priority": 4.1
+    }
+  },
+  {
+    "model": "page.menucategory",
+    "pk": 11,
+    "fields": {
+      "name": "ラーメン",
+      "type": 1,
+      "priority": 4.2
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 1,
+    "fields": {
+      "name": "アサヒ生ビール(中)",
+      "category": 1,
+      "price": 400,
+      "member_price": 320,
+      "priority": 0.0,
+      "welcome_flg": false,
+      "text": null
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 2,
+    "fields": {
+      "name": "アサヒ生ビール(グラス)",
+      "category": 1,
+      "price": 200,
+      "member_price": 160,
+      "priority": 1.0,
+      "welcome_flg": true,
+      "text": null
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 3,
+    "fields": {
+      "name": "ローストチキンセット",
+      "category": 4,
+      "price": 600,
+      "member_price": 480,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": "バケットorライスのどちらかをお申し付けください"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 4,
+    "fields": {
+      "name": "ビーフシチューセット",
+      "category": 4,
+      "price": 1000,
+      "member_price": 800,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": "バケットorライスのどちらかをお申し付けください"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 5,
+    "fields": {
+      "name": "ハンバーグセット",
+      "category": 4,
+      "price": 700,
+      "member_price": 560,
+      "priority": 3.0,
+      "welcome_flg": false,
+      "text": "バケットorライスのどちらかをお申し付けください"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 6,
+    "fields": {
+      "name": "カレーライス",
+      "category": 4,
+      "price": 500,
+      "member_price": 400,
+      "priority": 4.0,
+      "welcome_flg": false,
+      "text": "プラス¥50でエッグカレーにできます"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 7,
+    "fields": {
+      "name": "ドライカレー",
+      "category": 4,
+      "price": 500,
+      "member_price": 400,
+      "priority": 5.0,
+      "welcome_flg": false,
+      "text": "スープが付きます"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 8,
+    "fields": {
+      "name": "オムライス",
+      "category": 4,
+      "price": 700,
+      "member_price": 560,
+      "priority": 6.0,
+      "welcome_flg": false,
+      "text": "ケチャップorデミグラスソースお選びください\r\nスープ・サラダ付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 9,
+    "fields": {
+      "name": "エビピラフ",
+      "category": 4,
+      "price": 500,
+      "member_price": 400,
+      "priority": 7.0,
+      "welcome_flg": false,
+      "text": "スープ・サラダ付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 10,
+    "fields": {
+      "name": "カルボナーラ",
+      "category": 4,
+      "price": 600,
+      "member_price": 480,
+      "priority": 8.0,
+      "welcome_flg": false,
+      "text": "スープ・サラダ付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 11,
+    "fields": {
+      "name": "ナポリタン",
+      "category": 4,
+      "price": 600,
+      "member_price": 480,
+      "priority": 9.0,
+      "welcome_flg": false,
+      "text": "スープ・サラダ付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 12,
+    "fields": {
+      "name": "牛丼",
+      "category": 5,
+      "price": 600,
+      "member_price": 480,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": "味噌汁付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 13,
+    "fields": {
+      "name": "中華丼",
+      "category": 5,
+      "price": 600,
+      "member_price": 480,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": "味噌汁付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 14,
+    "fields": {
+      "name": "チャーハン",
+      "category": 6,
+      "price": 480,
+      "member_price": 380,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": "スープ付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 15,
+    "fields": {
+      "name": "焼きそば",
+      "category": 6,
+      "price": 400,
+      "member_price": 320,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": "スープ付き"
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 16,
+    "fields": {
+      "name": "天ぷらうどん",
+      "category": 9,
+      "price": 400,
+      "member_price": 320,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 17,
+    "fields": {
+      "name": "月見うどん",
+      "category": 9,
+      "price": 400,
+      "member_price": 320,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 18,
+    "fields": {
+      "name": "天ぷらそば",
+      "category": 10,
+      "price": 400,
+      "member_price": 320,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 19,
+    "fields": {
+      "name": "月見そば",
+      "category": 10,
+      "price": 400,
+      "member_price": 320,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 20,
+    "fields": {
+      "name": "しょうゆラーメン",
+      "category": 11,
+      "price": 500,
+      "member_price": 400,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 21,
+    "fields": {
+      "name": "ちゃんぽん",
+      "category": 11,
+      "price": 680,
+      "member_price": 540,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 22,
+    "fields": {
+      "name": "フレンチトースト",
+      "category": 8,
+      "price": 500,
+      "member_price": 400,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 23,
+    "fields": {
+      "name": "ガーリックトースト",
+      "category": 8,
+      "price": 300,
+      "member_price": 240,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 24,
+    "fields": {
+      "name": "たこ焼き",
+      "category": 8,
+      "price": 300,
+      "member_price": 240,
+      "priority": 3.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 25,
+    "fields": {
+      "name": "もつ煮込み",
+      "category": 8,
+      "price": 500,
+      "member_price": 400,
+      "priority": 5.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 26,
+    "fields": {
+      "name": "枝豆",
+      "category": 8,
+      "price": 300,
+      "member_price": 240,
+      "priority": 6.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 27,
+    "fields": {
+      "name": "レモン酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 1.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 28,
+    "fields": {
+      "name": "ライム酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 2.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 29,
+    "fields": {
+      "name": "青りんご酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 3.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 30,
+    "fields": {
+      "name": "巨峰酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 4.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 31,
+    "fields": {
+      "name": "ウメ酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 5.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 32,
+    "fields": {
+      "name": "シークァーサー酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 6.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 33,
+    "fields": {
+      "name": "ゆず酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 7.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 34,
+    "fields": {
+      "name": "プレーン酎ハイ",
+      "category": 2,
+      "price": 380,
+      "member_price": 300,
+      "priority": 8.0,
+      "welcome_flg": false,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 35,
+    "fields": {
+      "name": "アイスコーヒー",
+      "category": 3,
+      "price": 180,
+      "member_price": 140,
+      "priority": 1.0,
+      "welcome_flg": true,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 36,
+    "fields": {
+      "name": "ウーロン茶",
+      "category": 3,
+      "price": 180,
+      "member_price": 140,
+      "priority": 2.0,
+      "welcome_flg": true,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 37,
+    "fields": {
+      "name": "オレンジジュース",
+      "category": 3,
+      "price": 180,
+      "member_price": 140,
+      "priority": 3.0,
+      "welcome_flg": true,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menu",
+    "pk": 38,
+    "fields": {
+      "name": "ジンジャーエール",
+      "category": 3,
+      "price": 180,
+      "member_price": 140,
+      "priority": 4.0,
+      "welcome_flg": true,
+      "text": ""
+    }
+  },
+  {
+    "model": "page.menuimage",
+    "pk": 2,
+    "fields": {
+      "img": "コーヒーぜりー.jpg",
+      "menu": 1
+    }
+  }
+]
